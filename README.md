@@ -1,7 +1,5 @@
 # VehicleData
 
-TODO: Write a gem description
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,7 +16,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+  VehicleData::Service.get_support_functions
+
+  {
+    "version"=>"0.2", 
+    "functions"=>[
+      "makes.getAll", 
+      "makes.getInfo", 
+      "service.getSupportedFunctions", 
+      "vehicles.getMakes", 
+      "vehicles.getModels", 
+      "vehicles.getTrims", 
+      "vehicles.getStyleTrims", 
+      "vehicles.getTransmissions", 
+      "vin.decode"
+    ]
+  } 
 
 ## Contributing
 
