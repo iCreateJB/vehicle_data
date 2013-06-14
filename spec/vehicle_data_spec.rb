@@ -8,11 +8,6 @@ describe VehicleData::Base do
   }
   subject { VehicleData::Base.new(options) }
 
-  before(:each) do 
-    ENV.stub(:[]).with("app_key").and_return("#{SecureRandom.hex(10)}")
-    ENV.stub(:[]).with("secret").and_return("#{SecureRandom.hex(10)}")
-  end
-
   it { should respond_to(:send_request) }
 
   it { subject.app_key.should_not be_nil }
