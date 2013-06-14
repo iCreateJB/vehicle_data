@@ -1,3 +1,4 @@
+{<img src="https://travis-ci.org/iCreateJB/vehicle_data.png" />}[https://travis-ci.org/iCreateJB/vehicle_data]
 # VehicleData
 
 ## Installation
