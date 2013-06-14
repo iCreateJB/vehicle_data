@@ -2,11 +2,11 @@ module VehicleData
   class Makes < VehicleData::Base
     class << self
       def get_all
-        self.new({:method => 'makes.getAll'}).send_request
+        self.new({:f => 'makes.getAll'}).send_request
       end
 
-      def get_info(options={})
-        self.new({:method => 'makes.getInfo'}).send_request
+      def get_info(make)
+        self.new({:f => 'makes.getInfo', :make => make}).send_request
       end
     end
   end

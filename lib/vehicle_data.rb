@@ -15,7 +15,7 @@ module VehicleData
     def initialize(options={})
       @app_key = ENV['app_key']
       @secret  = ENV['secret']
-      @data    = { :app => @app_key, :v => 0.2, :t => Time.now.to_i }
+      @data    = options.merge!({ :app => @app_key, :v => 0.2, :t => Time.now.to_i })
     end
 
     def send_request
